@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugas 1 Praktikum Pemweb</title>
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="container my-4">
+  <!-- To-Do List Section -->
+  <section class="mb-5">
+    <h1 class="mb-4">To-Do List</h1>
+    <div class="input-group mb-3" style="max-width: 400px;">
+      <input
+        type="text"
+        id="task-input"
+        class="form-control"
+        placeholder="Tambahkan tugas..."
+      />
+      <button id="add-task" class="btn btn-primary">Tambah</button>
+    </div>
+    <ul id="task-list" class="list-group" style="max-width: 400px;"></ul>
+  </section>
+
+  <!-- Kalkulator Sederhana Section -->
+  <section class="mb-5">
+    <h1 class="mb-4">Kalkulator Sederhana</h1>
+    <div class="row mb-3" style="max-width: 400px;">
+      <div class="col">
+        <input
+          type="number"
+          id="angka1"
+          class="form-control"
+          placeholder="Angka 1"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="number"
+          id="angka2"
+          class="form-control"
+          placeholder="Angka 2"
+        />
+      </div>
+    </div>
+    <div class="row row-cols-4 g-2" style="max-width: 400px;">
+      <div class="col">
+        <button id="btn-tambah" class="btn btn-success w-100">+</button>
+      </div>
+      <div class="col">
+        <button id="btn-kurang" class="btn btn-info w-100">-</button>
+      </div>
+      <div class="col">
+        <button id="btn-kali" class="btn btn-danger w-100">×</button>
+      </div>
+      <div class="col">
+        <button id="btn-bagi" class="btn btn-warning w-100">÷</button>
+      </div>
+    </div>
+    <div id="hasil-kalkulator" class="fs-5 mt-3" style="max-width: 400px;"></div>
+  </section>
+
+  <!-- Form Validasi Input Section -->
+  <section>
+    <h2 class="mb-4">Form Registrasi</h2>
+    <form
+      id="validation-form"
+      novalidate
+      class="bg-light p-4 rounded"
+      style="max-width: 400px;"
+    >
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          placeholder="Masukkan nama"
+        />
+        <div id="name-error" class="text-danger small mt-1"></div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Masukkan email"
+        />
+        <div id="email-error" class="text-danger small mt-1"></div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          placeholder="Masukkan password"
+        />
+        <div id="password-error" class="text-danger small mt-1"></div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+      <div id="form-success" class="text-success mt-2"></div>
+    </form>
+  </section>
+
+  <!-- Bootstrap 5 JS Bundle (termasuk Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- File JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
