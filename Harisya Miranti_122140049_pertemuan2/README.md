@@ -1,7 +1,7 @@
 Aplikasi Daftar Tugas Mahasiswa
 
-    Aplikasi ini merupakan proyek praktikum "Pemrograman Web Next Gen" pada pertemuan 2 yang berfungsi sebagai dashboard untuk mencatat, mengelola, dan menyaring tugas-tugas perkuliahan mahasiswa berdasarkan mata kuliah, deadline, dan status penyelesaian.
-    Aplikasi ini dibuat menggunakan HTML, CSS (dengan TailwindCSS), dan JavaScript (ES6+), serta menyimpan data secara lokal di browser menggunakan localStorage.
+Aplikasi ini merupakan proyek praktikum "Pemrograman Web Next Gen" pada pertemuan 2 yang berfungsi sebagai dashboard untuk mencatat, mengelola, dan menyaring tugas-tugas perkuliahan mahasiswa berdasarkan mata kuliah, deadline, dan status penyelesaian.
+Aplikasi ini dibuat menggunakan HTML, CSS (dengan TailwindCSS), dan JavaScript (ES6+), serta menyimpan data secara lokal di browser menggunakan localStorage.
 
 
 Fitur Aplikasi
