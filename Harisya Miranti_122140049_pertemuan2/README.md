@@ -25,6 +25,7 @@ Fitur Aplikasi
 
 ✅ Tampilan responsif dan rapi menggunakan TailwindCSS
 
+Screenshoot Aplikasi yang sudah jadi: 
 ![Screenshot aplikasi yang sudah jadi](DaftarTugas.png)
 Fitur ES6+ yang Diimplementasikan
 
