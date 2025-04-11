@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Tugas Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-white min-h-screen p-6 font-sans">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+    <h1 class="text-3xl font-bold text-blue-700 mb-6 text-center">📋 Daftar Tugas Mahasiswa</h1>
+
+    <!-- Form Input -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+      <input type="text" id="taskInput" class="border p-2 rounded-md" placeholder="Judul tugas...">
+      <select id="subjectInput" class="border p-2 rounded-md">
+        <option value="" disabled selected>Pilih Mata Kuliah</option>
+        <option value="Pemrograman Web">Pemrograman Web</option>
+        <option value="Pengembangan Aplikasi Mobile">Pengembangan Aplikasi Mobile</option>
+        <option value="Sistem Informasi Lanjut">Sistem Informasi Lanjut</option>
+        <option value="Sistem Tertanam">Sistem Tertanam</option>
+        <option value="Kewirausahaan">Kewirausahaan</option>
+        <option value="Information Retrieval">Information Retrieval</option>
+        <option value="Kriptografi">Kriptografi</option>
+      </select>
+      <input type="date" id="deadlineInput" class="border p-2 rounded-md">
+      <input type="time" id="timeInput" class="border p-2 rounded-md">
+      <textarea id="descInput" class="border p-2 rounded-md md:col-span-2" placeholder="Deskripsi tugas..."></textarea>
+    </div>
+
+    <button id="addTaskBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded mb-4 transition duration-300">+ Tambah Tugas</button>
+
+    <!-- Filter -->
+    <div class="mb-6">
+      <label for="filterSubject" class="block text-sm font-medium text-gray-700 mb-1">Filter berdasarkan Mata Kuliah:</label>
+      <select id="filterSubject" class="border p-2 rounded-md w-full">
+        <option value="all">Semua Mata Kuliah</option>
+        <option value="Pemrograman Web">Pemrograman Web</option>
+        <option value="Pengembangan Aplikasi Mobile">Pengembangan Aplikasi Mobile</option>
+        <option value="Sistem Informasi Lanjut">Sistem Informasi Lanjut</option>
+        <option value="Sistem Tertanam">Sistem Tertanam</option>
+        <option value="Kewirausahaan">Kewirausahaan</option>
+        <option value="Information Retrieval">Information Retrieval</option>
+        <option value="Kriptografi">Kriptografi</option>
+      </select>
+    </div>
+
+    <ul id="taskList" class="space-y-4"></ul>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
